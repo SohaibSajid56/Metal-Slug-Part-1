@@ -1,44 +1,39 @@
-# 🎮 Metal Slug (C++ with Raylib - Procedural Version)
+# 🎮 Metal Slug (C++ with Raylib – Procedural Edition)
 
-This is the **first version** of my custom-made **Metal Slug** game clone, built entirely using **C++** and the **raylib** graphics library — without using any Object-Oriented Programming.  
-It demonstrates how a complete 2D shooting game can be made using only **Programming Fundamentals (PF concepts)** such as loops, functions, structs, and arrays.
-
----
-
-## 🧩 Overview
-
-In this version, everything — from player controls and enemy spawning to shooting and collision detection — is implemented using **procedural logic**.  
-There are **no classes or objects**; instead, the game is built through functions, global variables, and simple data structures.
-
-The goal of this stage was to:
-- Build a playable Metal Slug-style game from scratch using raylib.  
-- Learn how to design a **game loop**, handle **input**, and draw **sprites** on screen.  
-- Understand how each subsystem (player, enemies, bullets) interacts before applying OOP.
+This project is a **fully playable 2D run-and-gun game**, inspired by the classic **Metal Slug** series — built entirely using **C++ and raylib**, but written in a **procedural programming style** (without OOP).  
+Despite not using classes or inheritance, this version delivers a **complete gameplay experience** with movement, shooting, enemy AI, collisions, menus, and difficulty modes.
 
 ---
 
-## ⚙️ Features
+## 🚀 Overview
 
-- 🧍 **Player Controls**
-  - Move left and right with arrow keys.
-  - Jump with spacebar.
-  - Shoot bullets using `Z`.
+This version was my first major step into game development with **raylib**.  
+The focus was on mastering **game logic, rendering, and event handling** using only **Programming Fundamentals (PF concepts)** — such as structs, loops, and functions.  
 
-- 💥 **Enemy System**
-  - Enemies spawn automatically at intervals.
-  - Enemies move toward the player.
-  - When hit by bullets, enemies are destroyed.
+It’s a complete game on its own, not a prototype.  
+Every gameplay element — from player control to level progression — is handled procedurally and efficiently.
 
-- 🔫 **Shooting Mechanics**
-  - Bullets fired by the player move across the screen.
-  - Collision detection with enemies using simple bounding boxes.
+---
 
-- 🧮 **Collision Detection**
-  - Uses rectangular overlap checks between bullets and enemies.
+## 🧩 Key Features
 
-- 🕹️ **Game Menu**
-  - Basic text-based main menu built with `DrawText()`.
-  - Includes difficulty selection (Easy, Normal, Hard).
+### 🎮 Core Gameplay
+- Smooth **player movement** (run, jump, and shoot).
+- **Responsive shooting** mechanics with bullet management.
+- **Enemy AI** that moves, attacks, and respawns dynamically.
+- **Collision detection** between bullets, player, and enemies.
+- **Lives and scoring system** to track player progress.
+
+### 🏁 Level and Game Flow
+- Proper **main menu** with text rendering via raylib.
+- **Difficulty modes** (Easy / Normal / Hard) that adjust enemy speed and spawn rate.
+- **Restart and game over** states.
+- Smooth level transitions and consistent frame rate.
+
+### 🎨 Graphics and Sound
+- 2D **sprite-based graphics** rendered with raylib.
+- Basic **animation frames** for player and enemy movement.
+- **Sound effects** for shooting and explosions (optional).
 
 ---
 
@@ -49,24 +44,24 @@ The goal of this stage was to:
 | `←` / `→` | Move left / right |
 | `Space` | Jump |
 | `Z` | Shoot |
-| `Enter` | Start game |
-| `Esc` | Exit game |
+| `Enter` | Start / Select |
+| `Esc` | Exit Game |
 
 ---
 
-## 🧱 Technical Details
+## ⚙️ Technical Details
 
 - **Language:** C++  
 - **Library:** [raylib](https://www.raylib.com/)  
-- **Paradigm:** Procedural Programming (no classes or OOP)  
-- **Key Concepts Used:**  
-  - Functions and modular design  
-  - Structs for storing player/enemy data  
-  - Loops and conditionals for gameplay logic  
-  - Arrays for handling multiple enemies and bullets  
-  - raylib functions for drawing sprites, handling input, and managing time  
+- **Programming Paradigm:** Procedural  
+- **Core Concepts Used:**  
+  - Functions for gameplay logic and updates  
+  - `struct`s for entities (Player, Enemy, Bullet)  
+  - Arrays for managing multiple enemies/bullets  
+  - Loops for continuous game updates  
+  - Conditional checks for collisions and states  
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
