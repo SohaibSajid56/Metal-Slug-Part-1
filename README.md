@@ -1,41 +1,44 @@
-# 🎮 Metal Slug (C++ - Procedural Version)
+# 🎮 Metal Slug (C++ with Raylib - Procedural Version)
 
-This is the **first version** of my custom-made **Metal Slug** game clone, built entirely using **C++** and the **raylib** graphics library — without using Object-Oriented Programming.  
-It demonstrates the use of **core programming fundamentals (PF concepts)** like loops, conditionals, arrays, and functions to build a working 2D action game.
+This is the **first version** of my custom-made **Metal Slug** game clone, built entirely using **C++** and the **raylib** graphics library — without using any Object-Oriented Programming.  
+It demonstrates how a complete 2D shooting game can be made using only **Programming Fundamentals (PF concepts)** such as loops, functions, structs, and arrays.
 
 ---
 
-## 🧩 Project Overview
+## 🧩 Overview
 
-This version of the game focuses on implementing **game logic procedurally** — everything from player movement and enemy spawning to shooting mechanics and collision detection is handled using **functions and global variables** instead of classes or objects.
+In this version, everything — from player controls and enemy spawning to shooting and collision detection — is implemented using **procedural logic**.  
+There are **no classes or objects**; instead, the game is built through functions, global variables, and simple data structures.
 
-The goal of this phase was to:
-- Understand how to structure a game loop.  
-- Learn how rendering, input handling, and updates work together.  
-- Build a playable and enjoyable 2D game using only PF concepts.  
+The goal of this stage was to:
+- Build a playable Metal Slug-style game from scratch using raylib.  
+- Learn how to design a **game loop**, handle **input**, and draw **sprites** on screen.  
+- Understand how each subsystem (player, enemies, bullets) interacts before applying OOP.
 
 ---
 
 ## ⚙️ Features
 
-- **Player Movement**
-  - Move left and right using arrow keys.
-  - Jump using the spacebar.
+- 🧍 **Player Controls**
+  - Move left and right with arrow keys.
+  - Jump with spacebar.
+  - Shoot bullets using `Z`.
 
-- **Shooting Mechanism**
-  - Fire bullets using a single key (e.g., `Z`).
-  - Bullet direction and speed controlled via simple vectors.
+- 💥 **Enemy System**
+  - Enemies spawn automatically at intervals.
+  - Enemies move toward the player.
+  - When hit by bullets, enemies are destroyed.
 
-- **Enemies**
-  - Basic enemy spawning and movement logic.
-  - Enemies get destroyed when hit by player bullets.
+- 🔫 **Shooting Mechanics**
+  - Bullets fired by the player move across the screen.
+  - Collision detection with enemies using simple bounding boxes.
 
-- **Collision Detection**
-  - Simple bounding-box (rectangular) collision checks between bullets, player, and enemies.
+- 🧮 **Collision Detection**
+  - Uses rectangular overlap checks between bullets and enemies.
 
-- **Menu and Difficulty Selection**
-  - Basic main menu using `DrawText()`.
-  - User can select difficulty level: Easy, Normal, or Hard (changes enemy speed/spawn rate).
+- 🕹️ **Game Menu**
+  - Basic text-based main menu built with `DrawText()`.
+  - Includes difficulty selection (Easy, Normal, Hard).
 
 ---
 
@@ -43,24 +46,25 @@ The goal of this phase was to:
 
 | Key | Action |
 |-----|---------|
-| `←` / `→` | Move left or right |
+| `←` / `→` | Move left / right |
 | `Space` | Jump |
 | `Z` | Shoot |
-| `Enter` | Start / Select |
-| `Esc` | Exit the game |
+| `Enter` | Start game |
+| `Esc` | Exit game |
 
 ---
 
 ## 🧱 Technical Details
 
 - **Language:** C++  
-- **Graphics Library:** [raylib](https://www.raylib.com/)  
-- **Paradigm:** Procedural (No Classes or OOP)  
-- **Core Concepts Used:**  
-  - Functions and modular code  
-  - Structs for grouping related data  
-  - Arrays and loops for handling enemies and bullets  
-  - Conditional logic for collision and game states  
+- **Library:** [raylib](https://www.raylib.com/)  
+- **Paradigm:** Procedural Programming (no classes or OOP)  
+- **Key Concepts Used:**  
+  - Functions and modular design  
+  - Structs for storing player/enemy data  
+  - Loops and conditionals for gameplay logic  
+  - Arrays for handling multiple enemies and bullets  
+  - raylib functions for drawing sprites, handling input, and managing time  
 
 ---
 
